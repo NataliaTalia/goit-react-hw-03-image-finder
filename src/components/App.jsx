@@ -100,8 +100,7 @@ export default class App extends Component {
   };
 
   render() {
-    const { error, loading, pictures, selectedImage, showModal, pictureName } =
-      this.state;
+    const { error, loading, pictures, selectedImage, showModal } = this.state;
     const hasMorePictures = pictures && pictures.hits.length < pictures.total;
 
     return (
