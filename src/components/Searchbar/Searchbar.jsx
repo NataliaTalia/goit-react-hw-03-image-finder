@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import css from './Searchbar.module.css';
 import { ReactComponent as SearchIcon } from 'binoculars-icon.svg';
+import PropTypes from 'prop-types';
 
 export default class Searchbar extends Component {
   state = {
@@ -44,3 +45,7 @@ export default class Searchbar extends Component {
     );
   }
 }
+
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func,
+};
