@@ -106,14 +106,7 @@ export default class App extends Component {
     return (
       <div
         className={css.App}
-        // style={{
-        //   height: '100vh',
-        //   display: 'flex',
-        //   justifyContent: 'center',
-        //   alignItems: 'center',
-        //   fontSize: 40,
-        //   color: '#010101',
-        // }}
+     
       >
         {showModal && (
           <Modal imageUrl={selectedImage} onClose={this.toggleModal} />
